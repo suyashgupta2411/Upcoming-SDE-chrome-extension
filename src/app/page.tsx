@@ -1,101 +1,118 @@
-import Image from "next/image";
+"use client";
+
+import Calender from "./components/Calender";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="h-screen overflow-hidden p-3 bg-black">
+      <div className="h-full w-full border border-gray-300 box-border rounded-md">
+        {/* Grid Layout */}
+        <div className="grid grid-cols-8 grid-rows-7 gap-2 h-full">
+          {/* Heading */}
+          <div
+            id="heading"
+            className="row-start-1 row-end-2 col-start-4 col-end-6  rounded-md flex items-center justify-center"
+          >
+            Heading
+          </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          {/* Calendar */}
+          <div
+            id="calendar"
+            className="row-start-1 row-end-3 col-start-1 col-end-3 rounded-md flex items-center justify-center w-full h-full"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            <Calender />
+          </div>
+
+          {/* Info */}
+          <div
+            id="info"
+            className="row-start-1 row-end-2 col-start-7 col-end-9  rounded-md flex items-center justify-center"
           >
-            Read our docs
-          </a>
+            Info
+          </div>
+
+          {/* Gemini Search Bar */}
+          <div
+            id="gemini-search-bar"
+            className="row-start-2 row-end-3 col-start-3 col-end-7  rounded-md flex items-center justify-center"
+          >
+            Gemini Search Bar
+          </div>
+
+          {/* LinkedIn */}
+          <div
+            id="linkedin"
+            className="row-start-2 row-end-4 col-start-7 col-end-9  rounded-md flex items-center justify-center"
+          >
+            LinkedIn
+          </div>
+
+          {/* Job Portal */}
+          <div
+            id="job-portal"
+            className="row-start-3 row-end-7 col-start-3 col-end-7  rounded-md flex items-center justify-center"
+          >
+            Job Portal
+          </div>
+
+          {/* LeetCode */}
+          <div
+            id="leetcode"
+            className="row-start-3 row-end-5 col-start-1 col-end-3  rounded-md flex items-center justify-center"
+          >
+            LeetCode
+          </div>
+
+          {/* YouTube Playlist */}
+          <div
+            id="youtube-playlist"
+            className="row-start-4 row-end-5 col-start-7 col-end-9  rounded-md flex items-center justify-center"
+          >
+            YouTube Playlist
+          </div>
+
+          {/* CodeChef */}
+          <div
+            id="codechef"
+            className="row-start-5 row-end-7 col-start-1 col-end-3  rounded-md flex items-center justify-center"
+          >
+            CodeChef
+          </div>
+
+          {/* SDE Sheet */}
+          <div
+            id="sde-sheet"
+            className="row-start-5 row-end-6 col-start-7 col-end-9  rounded-md flex items-center justify-center"
+          >
+            SDE Sheet
+          </div>
+
+          {/* Music Player */}
+          <div
+            id="music-player"
+            className="row-start-6 row-end-8 col-start-7 col-end-9  rounded-md flex items-center justify-center"
+          >
+            Music Player
+          </div>
+
+          {/* Decoration */}
+          <div
+            id="decoration"
+            className="row-start-7 row-end-8 col-start-1 col-end-3  rounded-md flex items-center justify-center"
+          >
+            Decoration
+          </div>
+
+          {/* Google Icons Bar */}
+          <div
+            id="google-icons-bar"
+            className="row-start-7 row-end-8 col-start-3 col-end-7  rounded-md flex items-center justify-center"
+          >
+            Google Icons Bar
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
     </div>
   );
 }
