@@ -1,6 +1,7 @@
 "use client";
 
 import Calender from "./components/Calender";
+import SearchBar from "./components/SearchBar";
 
 export default function Home() {
   return (
@@ -37,7 +38,7 @@ export default function Home() {
             id="gemini-search-bar"
             className="row-start-2 row-end-3 col-start-3 col-end-7  rounded-md flex items-center justify-center"
           >
-            Gemini Search Bar
+            <SearchBar />
           </div>
 
           {/* LinkedIn */}
@@ -60,17 +61,13 @@ export default function Home() {
           <div
             id="leetcode"
             className="row-start-3 row-end-5 col-start-1 col-end-3  rounded-md flex items-center justify-center"
-          >
-            LeetCode
-          </div>
+          ></div>
 
           {/* YouTube Playlist */}
           <div
             id="youtube-playlist"
             className="row-start-4 row-end-5 col-start-7 col-end-9  rounded-md flex items-center justify-center"
-          >
-            YouTube Playlist
-          </div>
+          ></div>
 
           {/* CodeChef */}
           <div
