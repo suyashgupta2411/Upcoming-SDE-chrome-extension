@@ -2,11 +2,14 @@
 
 import Calender from "./components/Calender";
 import SearchBar from "./components/SearchBar";
-
+import Heading from "./components/Heading";
+import SDEsheet from "./components/SDEsheet";
+import GoogleIconsBar from "./components/GoogleIconsBar";
+import MusicPlayer from "./components/MusicPlayer";
 export default function Home() {
   return (
-    <div className="h-screen overflow-hidden p-3 bg-black">
-      <div className="h-full w-full border border-gray-300 box-border rounded-md">
+    <div className="h-screen overflow-hidden p-3 bg-[url('/bg-image.jpg')] bg-cover">
+      <div className="h-full w-full border border-gray-300 box-border rounded-md shadow-[0_0_7px_rgba(0,0,0,1)]  shadow-gray-300">
         {/* Grid Layout */}
         <div className="grid grid-cols-8 grid-rows-7 gap-2 h-full">
           {/* Heading */}
@@ -14,7 +17,7 @@ export default function Home() {
             id="heading"
             className="row-start-1 row-end-2 col-start-4 col-end-6  rounded-md flex items-center justify-center"
           >
-            Heading
+            <Heading />
           </div>
 
           {/* Calendar */}
@@ -82,7 +85,7 @@ export default function Home() {
             id="sde-sheet"
             className="row-start-5 row-end-6 col-start-7 col-end-9  rounded-md flex items-center justify-center"
           >
-            SDE Sheet
+            <SDEsheet />
           </div>
 
           {/* Music Player */}
@@ -90,7 +93,7 @@ export default function Home() {
             id="music-player"
             className="row-start-6 row-end-8 col-start-7 col-end-9  rounded-md flex items-center justify-center"
           >
-            Music Player
+            <MusicPlayer />
           </div>
 
           {/* Decoration */}
@@ -104,9 +107,9 @@ export default function Home() {
           {/* Google Icons Bar */}
           <div
             id="google-icons-bar"
-            className="row-start-7 row-end-8 col-start-3 col-end-7  rounded-md flex items-center justify-center"
+            className="row-start-7 row-end-8 col-start-3 col-end-7 rounded-md flex items-center justify-center"
           >
-            Google Icons Bar
+            <GoogleIconsBar />
           </div>
         </div>
       </div>

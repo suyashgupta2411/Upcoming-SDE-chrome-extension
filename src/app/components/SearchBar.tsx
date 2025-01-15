@@ -184,7 +184,7 @@ const SearchBar = () => {
                       }`}
                     >
                       <div
-                        className={`max-w-[80%] p-4 rounded-lg ${
+                        className={`  rounded-full ${
                           message.role === "user"
                             ? "bg-zinc-800 text-white"
                             : "bg-zinc-900 text-gray-200"

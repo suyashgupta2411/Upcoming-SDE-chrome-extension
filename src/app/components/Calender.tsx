@@ -43,7 +43,7 @@ const Calendar: React.FC<CalendarProps> = ({ initialTime = new Date() }) => {
   });
 
   return (
-    <div className="h-full w-full bg-black rounded-lg p-4 flex flex-col items-center justify-between">
+    <div className="h-full w-full rounded-lg p-4 flex flex-col items-center justify-between">
       {/* Time Display */}
       <div className="text-md font-medium text-white/90">{timeString}</div>
 
